@@ -45,7 +45,7 @@ Our goal today is to harness the power of cookies. First, to track visitors to o
 # some_controller.rb
 
 def index
-    count = cookies[:visit_count] || 1
+    count = cookies[:visit_count] || 0
     cookies[:visit_count] = count.to_i + 1
 end
 ```
